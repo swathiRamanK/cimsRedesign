@@ -1,0 +1,128 @@
+/*Colors*/
+:root{
+    --light-blue:#04abdd;
+    --blue:#113796;
+    --grey-1:#eaeaea;
+
+
+    
+}
+
+/* Reusable Styles*/
+.padding-10-30{
+    padding: 10px 30px;
+}
+.marginL-15{
+    margin-left: 15px;
+}
+.marginR-5{
+    margin-right: 5px;
+}
+.text-right{
+    float:right;
+}
+.text-blue{
+color:var(--blue);
+}
+.text-bold{
+    font-weight: bold;
+}
+
+.wrapper{
+    background: var(--grey-1);
+}
+header{
+    background:var(--blue);
+    color:#fff;
+}
+.title{
+    background:#fff;
+    color: #111;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+}
+
+
+/* My INstructions tab*/
+.my-instructions .p-tabview-title{
+    color:var(--blue);
+}
+.my-instructions .p-tabview-panels{
+    padding:0px;
+}
+.my-instructions .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: #ffffff;
+    border-color:var(--light-blue);
+    color: var(--light-blue);
+}
+.my-instructions .p-tabview ul{
+    padding: 0% 32%;
+  
+}
+.my-instructions .p-tabview ul li a{
+    padding: 10px;
+}
+.my-instructions .fiter-right {
+text-align: right;
+width: 100px;
+float: right;
+}
+.my-instructions .p-tabview{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.myinstructions-table .p-datatable-thead th{
+    background-color: var(--grey-1) !important;
+    padding: 6px 15px !important;
+}
+.table-header span{
+    width: 100%;
+}
+.table-header .pi-search{
+    left: 0px !important;
+    color: #111 !important;
+    font-weight: bold;
+     left: 0px !important;
+}
+.p-datatable-header{
+padding: 0px !important;
+}
+.table-header{
+    padding: 1rem 1rem;
+    background-color: var(--grey-1);
+}
+.dropdown-section{
+    background-color: #fff;
+    padding: 12px 14px;
+    border-left: 4px solid var(--light-blue) ;
+}
+.dropdown-section .p-dropdown{
+    border: none;
+    border-bottom: 2px solid var(--blue);
+    border-radius: 0px;
+    width: 200px;
+}
+.dropdown-section .pi-chevron-down{
+    color: var(--blue);
+}
+.search-bar:focus,.p-dropdown:focus
+,.my-instructions .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link:focus{
+    outline: none;
+    box-shadow: none;
+}
+.search-bar{
+    width: 75%;
+    border: none;
+    background: var(--grey-1);
+    margin-left: 20px;
+}
+.search-button,.search-button:active{
+    background: #fff !important;
+    color: var(--blue) !important;
+    border: 2px solid var(--blue) !important;
+}
+
+.radio-button-section{
+    background: #fff;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1rem;
+}
