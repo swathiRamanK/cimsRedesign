@@ -1,17 +1,17 @@
 <div class="wrapper">
-  <header class="toolbar padding-10-30" role="banner">
+  <header class="toolbar padding-10-15" role="banner">
     <span><i class="fa fa-bars marginR-5"></i>Menu</span>
   </header>
-  <div class="title padding-10-30">
+  <div class="title padding-10-15">
     Customer Instruction Managament System | C706913 | Role:Organiser
   </div>
-  <div class="padding-10-30">
+  <div class="padding-10-15" style="padding-top: 30px;">
     <span class="text-bold">Instruction</span>
     <span class="text-right text-blue text-bold"><i class="fa fa-plus-circle marginR-5" aria-hidden="true"></i>Add a new instruction</span>
   </div>
-  <div class="my-instructions padding-10-30">
+  <div class="my-instructions padding-10-15">
     <p-tabView>
-      <p-tabPanel header="My Instructions">
+      <p-tabPanel header="MY INSTRUCTIONS">
      
         <p-table #dt [value]="products"  class="myinstructions-table" [globalFilterFields]="['code','name','category','quantity']">
           <ng-template pTemplate="caption">
@@ -24,9 +24,10 @@
                   </span>
             </div>
             <div class="dropdown-section">
-              <p-dropdown [options]="cities" placeholder ="select a branch" [(ngModel)]="selectedCity" [filter]="true"></p-dropdown>
-              <p-dropdown [options]="cities" placeholder ="select start and end date" [(ngModel)]="selectedCity" [filter]="true" class="marginL-15"></p-dropdown>
-              <button pButton type="button" label="Search" class="search-button marginL-15" ></button>
+              <p-dropdown [options]="cities" placeholder ="Select a branch" [(ngModel)]="selectedCity" [filter]="true"></p-dropdown>
+              <p-dropdown [options]="cities" placeholder ="Select start and end date" [(ngModel)]="selectedCity" [filter]="true" class="marginL-15"></p-dropdown>
+          
+              <button pButton type="button" label="SEARCH" class="search-button marginL-15" ></button>
             </div>
             <div class="radio-button-section">
               <input type="radio" name="groupname" value="val1" [(ngModel)]="selectedValue"/>Active Instructions
@@ -36,10 +37,13 @@
         </ng-template>
           <ng-template pTemplate="header">
             <tr>
-              <th>Code</th>
-              <th>Name</th>
-              <th>Category</th>
-              <th>Quantity</th>
+              <th>Instruction ID</th>
+              <th>Acc.Number</th>
+              <th>Customer Name</th>
+              <th>Date Created</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Status</th>
             </tr>
           </ng-template>
           <ng-template pTemplate="body" let-product>
@@ -48,14 +52,17 @@
               <td>{{product.name}}</td>
               <td>{{product.category}}</td>
               <td>{{product.quantity}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
             </tr>
           </ng-template>
         </p-table>
       </p-tabPanel>
-      <p-tabPanel header="All Instructions">
+      <p-tabPanel header="ALL INSTRUCTIONS">
         Content 2
       </p-tabPanel>
-      <p-tabPanel header="Advance Payments">
+      <p-tabPanel header="ADVANCE PAYMENTS">
         Content 3
       </p-tabPanel>
     </p-tabView>
