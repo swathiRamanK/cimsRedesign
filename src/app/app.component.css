@@ -157,6 +157,26 @@ padding: 0px !important;
     font-weight: 700;
     border-radius: 4px;
 }
+.search-button{
+    color: var(--blue);
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 100px;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    transition: ease;
+    transition-duration: 0.1s;
+    border: 1px solid var(--blue);
+  
+   
+  }
+  .search-button:hover {
+    color: white;
+    background-color: var(--blue);
+  }
 
 .radio-button-section{
     background: #fff;
